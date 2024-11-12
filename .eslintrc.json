@@ -1,13 +1,17 @@
 {
   "env": {
-    "browser": true,
+    "node": true,
     "es2021": true
   },
   "extends": [
     "eslint:recommended",
+    "next",
     "plugin:@next/next/recommended",
     "plugin:prettier/recommended"
   ],
+  "globals": {
+    "JSX": "readonly"
+  },
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
